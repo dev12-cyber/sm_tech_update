@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wordpressriver">
+    <meta name="description" content="SM Tech - Digital Agency">
+    <!-- ======== Page title ============ -->
+    <title>SM Tech - Digital Agency</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/logo/sm_w.png">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!--<< Sheets Js >>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="assets/js/services.js" defer></script>
+</head>
+<body class="body-bg" id="service-details-container">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">                
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="M" class="letters-loading">
+                    M
+                </span>
+                <span data-text-preloader="T" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="H" class="letters-loading">
+                    H
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Mouse Cursor Start >>-->  
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Back To Top start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div id="offcanvas2" class="offcanvas__info" style="padding: 10px 10px !important; width: 700px !important;">
+            <div class="offcanvas__wrapper" style="padding: 10px 10px !important;">
+                <div class="offcanvas__content">
+                    <!-- <div class="offcanvas__top mb-3 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <h3 class="accordion-header">
+                                Custom Website Development
+                            </h3>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button onclick="toggleOffcanvas('offcanvas1')">
+                            <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="none">
+                        <img src="assets/img/service/details-5.jpg" alt="img">
+                    </div>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact mb-5">
+                        <p class="text d-none d-xl-block">
+                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                        </p>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-dot-circle"></i>
+                                </div>
+                                <p class="text d-none d-xl-block">
+                                    Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-dot-circle"></i>
+                                </div>
+                                <p class="text d-none d-xl-block">
+                                    Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-dot-circle"></i>
+                                </div>
+                                <p class="text d-none d-xl-block">
+                                    Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                                </p>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-dot-circle"></i>
+                                </div>
+                                <p class="text d-none d-xl-block">
+                                    Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                                </p>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <div id="head"></div>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb-wrapper section-bg bg-cover" style="background-image: url('assets/img/breadcrumb-shape.png');">
+        <div class="arrow-shape">
+            <img src="assets/img/arrow-shape.png" alt="img">
+        </div>
+        <div class="circle-shape">
+            <img src="assets/img/circle-shape.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="page-heading">
+                <div class="breadcrumb-sub-title">
+                    <h1 class="wow fadeInUp" data-wow-delay=".3s" id="service-title"> </h1>
+                </div>
+                <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                    <li>
+                        <a href="index.html">
+                        Home
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-chevrons-right"></i>
+                    </li>
+                    <li id="service-li"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="marquee-section fix">
+            <div class="mycustom-marque">
+                <div class="scrolling-wrap">
+                    <div class="comm">
+                        <div class="cmn-textslide textitalick text-custom-storke" id="service-title-1"></div>
+                        <div class="cmn-textslide textitalick" id="service-title-2"></div>
+                        <div class="cmn-textslide textitalick text-custom-storke" id="service-title-3"></div>
+                    </div>
+                    <div class="comm">
+                        <div class="cmn-textslide textitalick text-custom-storke" id="service-title-4"></div>
+                        <div class="cmn-textslide textitalick" id="service-title-5"></div>
+                        <div class="cmn-textslide textitalick text-custom-storke" id="service-title-6"></div>
+                    </div>
+                    <!-- <div class="comm">
+                        <div class="cmn-textslide textitalick text-custom-storke" id="service-title-7"></div>
+                        <div class="cmn-textslide textitalick" id="service-title-8"></div>
+                        <div class="cmn-textslide textitalick text-custom-storke" id="service-title-9"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Details Section Start -->
+    <section class="service-details-section fix section-padding" style="padding-bottom: 50px !important;">
+        <div class="container">
+            <div class="service-details-wrapper">
+                <div class="row g-4">
+                    <div class="col-xl-6 col-lg-4 col-md-6">
+                        <div class="details-content">
+                            <h2 id="feature-title"></h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-4 col-md-6 ps-lg-5">
+                        <div class="details-content">
+                            <p id="feature-content"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- <div class="details-image">
+                            <img src="assets/img/service/details-1.jpg" alt="img">
+                        </div> -->
+                        <div class="details-image-2">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <img src="assets/img/service/details-4.jpg" alt="img">
+                                </div>
+                                <div class="col-lg-4">
+                                    <img src="assets/img/service/details-5.jpg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-content">
+                            <h3 class="mb-3">Service Overview</h3>
+                            <p id="hero-content"></p>
+                            <div class="details-list-items">
+                                <ul>
+                                    <li>
+                                        + API Development
+                                    </li>
+                                    <li>
+                                        + Cloud Migration
+                                    </li>
+                                    <li>
+                                        + JavaScript
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        + WordPress
+                                    </li>
+                                    <li>
+                                        + Front End Development
+                                    </li>
+                                    <li>
+                                        + Flutter Framework
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="mb-3" id="why-choose-title"></h3>
+                            <!-- <p id="why-choose-title"></p> -->
+                        </div>
+                        <p id="why-choose-content"></p>
+                        <p class="mt-2" id="why-choose-content2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faq Section Start -->
+    <section class="faq-section fix section-padding">
+        <div class="container">
+            <div class="faq-wrapper">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="faq-content">
+                            <div class="xcxvf">
+                                <div class="roundlogo"></div>
+                                <div class="inner dots">
+                                    <div class="dot" style="background-image: url('./assets/img/service/Website_Development/icon1.png');"></div>
+                                    <div class="dot" style="background-image: url('./assets/img/service/Website_Development/icon2.png');"></div>
+                                </div>
+                                <div class="middle dots">
+                                    <div class="dot" style="background-image: url('./assets/img/service/Website_Development/icon3.png');"></div>
+                                    <div class="dot" style="background-image: url('./assets/img/service/Website_Development/icon4.png');"></div>
+                                </div>
+                                <div class="outer dots">
+                                    <div class="dot" style="background-image: url('./assets/img/service/Website_Development/icon5.png');"></div>
+                                    <div class="dot" style="background-image: url('./assets/img/service/Website_Development/icon6.png');"></div>
+                                </div>
+                                <div class="inner tooltips">
+                                    <div class="target"><div class="tooltip">ReactJS</div></div>
+                                    <div class="target"><div class="tooltip">HTML</div></div>
+                                </div>
+                                <div class="middle tooltips">
+                                    <div class="target"><div class="tooltip">CSS</div></div>
+                                    <div class="target"><div class="tooltip">Wordpress</div></div>
+                                </div>
+                                <div class="outer tooltips">
+                                    <div class="target"><div class="tooltip">VueJS</div></div>
+                                    <div class="target"><div class="tooltip">Python</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-content-2">
+                            <div class="faq-client-items">
+                                <div class="client-info">
+                                    <h2 class="wow fadeInUp" data-wow-delay=".3s" id="why-choose-title1"></h2>
+                                </div>
+                                <p id="why-choose-content1"></p>
+                                <p id="why-choose-content21"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Section Start -->
+    <div class="brand-section section-padding section-bg fix">
+        <div class="container">
+            <div class="service-details-wrapper">
+                <div class="details-content">
+                    <h2 class="mb-5">Features Overview</h2>
+                </div>
+                <div class="faq-wrapper">
+                    <div class="g-4">
+                        <div class="">
+                            <div class="faq-content">
+                                <div class="faq-accordion">
+                                    <div class="accordion row" id="accordion-container">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Category Section Start -->
+    <section class="faq-section fix section-padding">
+        
+    </section>
+
+    <!-- Lets Talk Section Start -->
+    <section class="lets-talk-section section-bg fix section-padding pb-0">
+        <div class="container">
+            <div class="lets-talk-wrapper">
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Have a project in mind? Let's <br> work together!</h2>
+                <a href="contact.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">Let's Talk!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <div id="foot"></div>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <!--<< header.html & footer.html >>-->
+    <script>
+        $(function(){
+            $("#head").load("header.html");
+            $("#foot").load("footer.html");
+        });
+    </script>
+</body>
+</html>
