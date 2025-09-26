@@ -4309,7 +4309,10 @@ input.main-search-input::placeholder {
   color: var(--theme);
   position: relative;
   z-index: 9;
+  
 }
+
+
 .service-box-items .content {
   margin-top: 25px;
   position: relative;
