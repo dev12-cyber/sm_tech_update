@@ -242,7 +242,7 @@ function loadAllSheetIDsIntoAccordion(workbook) {
                     </div>
                 </div>
                 <div class="breadcrumb-sub-title">
-                    <img src="${imageURL}" alt="img" style="max-width: 100% !important;">
+                    <img src="${imageURL}" alt="img" style="max-width: 100% !important; height">
                 </div>
                 <div class="offcanvas__details mb-3">
                     <p class="text d-none d-xl-block">${sheetRow.Tabs_Content || 'N/A'}</p>
