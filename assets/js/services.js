@@ -31,7 +31,8 @@ function generateHomepageServices(services) {
             <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-box-items style-3">
                     <div class="icon">
-                        <img src="${service.Icon}" alt="Service Icon">
+                       <img src="${service.Icon}" alt="Service Icon" style="width: 40px; height: 40px;">
+
                     </div>
                     <div class="content">
                         <h3><a href="service-details.html?id=${encodeURIComponent(serviceID)}">${service.ID}</a></h3>
