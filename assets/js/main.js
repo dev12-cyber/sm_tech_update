@@ -340,7 +340,9 @@ CSS TABLE OF CONTENTS
     }
 
     loader();
-   
+    setTimeout(function() {
+    document.getElementById("preloader").style.display = "none";
+  }, 4000); 
 
 })(jQuery); // End jQuery
 
