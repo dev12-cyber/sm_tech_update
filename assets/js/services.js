@@ -121,11 +121,18 @@ function loadServiceDetails() {
         updateElement("why-choose-content21", service.Why_choose_content2);
         updateElement("category", service.Link);
 
-        // ✅ Update Image (Image1)
-        if (service.Image1) {
-            const imageElement = document.getElementById("service-image");
-            if (imageElement) imageElement.src = service.Image1;
-        }
+     // ✅ Update Images (Image1 & Image2)
+// ✅ Update Service Images dynamically
+if (service.Image1) {
+    const image1 = document.getElementById("service-image-1");
+    if (image1) image1.src = service.Image1;
+}
+
+if (service.Image2) {
+    const image2 = document.getElementById("service-image-2");
+    if (image2) image2.src = service.Image2;
+}
+
 
         // ✅ Create clickable link for linked sheet
         if (service.Link) {
@@ -219,36 +226,47 @@ function loadAllSheetIDsIntoAccordion(workbook) {
         container.insertAdjacentHTML("beforeend", accordionHTML);
 
         // Attach the click event for each generated accordion item
-        document.getElementById(id).addEventListener("click", function () {
-            // Open the offcanvas
-            $("#offcanvas2").addClass("info-open");
-            $(".offcanvas__overlay").addClass("overlay-open");
-            
-            // Dynamically update offcanvas content with values from the selected row
-            const offcanvasContent = document.querySelector(".offcanvas__content");
-            const imageURL = `assets/img/service/${sheetName}/${sheetRow.ID}.png`;
-            // Clear previous content
-            offcanvasContent.innerHTML = `
-                <div class="offcanvas__top mb-3 d-flex justify-content-between align-items-center">
-                    <div class="offcanvas__logo">
-                        <h4 class="accordion-header">
-                            ${sheetRow.Tabs}
-                        </h4>
-                    </div>
-                    <div class="offcanvas__close">
-                        <button onclick="toggleOffcanvas('offcanvas1')">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="breadcrumb-sub-title">
-                    <img src="${imageURL}" alt="img" style="max-width: 100% !important; height">
-                </div>
-                <div class="offcanvas__details mb-3">
-                    <p class="text d-none d-xl-block">${sheetRow.Tabs_Content || 'N/A'}</p>
-                </div>
-            `;
-        });
+       document.getElementById(id).addEventListener("click", function () {
+    // Open the offcanvas
+    $("#offcanvas2").addClass("info-open");
+    $(".offcanvas__overlay").addClass("overlay-open");
+    
+    // Dynamically update offcanvas content
+    const offcanvasContent = document.querySelector(".offcanvas__content");
+
+    // Check if image exists for this service
+    let imageHTML = '';
+    if (sheetRow.Image1) { // or Image2 depending on your sheet
+        imageHTML = `
+            <div class="breadcrumb-sub-title">
+                <img src="${sheetRow.Image1}" alt="${sheetRow.ID}" style="max-width: 100%; height: auto;">
+            </div>
+        `;
+    }
+
+    // Clear previous content and inject dynamically
+    offcanvasContent.innerHTML = `
+        <div class="offcanvas__top mb-3 d-flex justify-content-between align-items-center">
+            <div class="offcanvas__logo">
+                <h4 class="accordion-header">
+                    ${sheetRow.Tabs}
+                </h4>
+            </div>
+            <div class="offcanvas__close">
+                <button onclick="toggleOffcanvas('offcanvas1')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        ${imageHTML}
+
+        <div class="offcanvas__details mb-3">
+            <p class="text d-none d-xl-block">${sheetRow.Tabs_Content || 'N/A'}</p>
+        </div>
+    `;
+});
+
     });
 }
 
