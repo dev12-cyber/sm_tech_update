@@ -239,7 +239,7 @@ function loadAllSheetIDsIntoAccordion(workbook) {
     if (sheetRow.Image1) { // or Image2 depending on your sheet
         imageHTML = `
             <div class="breadcrumb-sub-title">
-                <img src="${sheetRow.Image1}" alt="${sheetRow.ID}" style="max-width: 100%; height: auto;">
+                <img src="${sheetRow.Image1}" alt="${sheetRow.ID}" style="max-width: 100%; height:200px;">
             </div>
         `;
     }
