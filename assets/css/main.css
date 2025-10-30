@@ -4547,8 +4547,9 @@ input.main-search-input::placeholder {
 }
 .service-details-wrapper .details-image-2 img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 450px;
+ 
+ 
 }
 
 .team-box-items {
