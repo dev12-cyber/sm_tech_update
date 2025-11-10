@@ -410,11 +410,15 @@
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
     <!--<< header.html & footer.html >>-->
-    <script>
+  <script>
         $(function(){
             $("#head").load("header.html");
             $("#foot").load("footer.html");
         });
-    </script>
+        function toggleOffcanvas(id) {
+            $("#" + id).removeClass("info-open");
+            $(".offcanvas__overlay").removeClass("overlay-open");
+        }
+    </script>
 </body>
 </html>
